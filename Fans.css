@@ -1,5 +1,65 @@
 
 
+
+
+.Nick{
+	margin-right: 50px;
+	margin-left: 1400px;
+
+
+}
+
+
+.date{
+
+	margin-left: 150px;
+	margin-right: 300px;
+}
+
+
+
+
+.commit{
+
+	text-align: center;
+}
+
+
+
+.globall{
+
+	 width: 50px;
+    height: 40px;
+    background-color: green;
+	border-style: solid;
+	display: block;
+	-webkit-transition:translate(1000px,0px);
+	transition: transform 25s;
+	transform: translate(1800px,0px);
+
+}
+
+
+.globall:hover{ 
+    
+    
+    -webkit-transform: translate(50px,0px);
+    transform: translate(50px,0px);
+
+
+
+
+}
+@keyframes translate{
+	0%{
+		transform: translate(1800px,0px);
+	}
+	100%{ transform: translate(50px,0px);
+
+	}
+}
+
+
 .firstelement{
 	margin-left: 150px;
 
@@ -55,6 +115,7 @@
 	height: 50px;
 	text-align: center;
 
+
 }
 
 
@@ -71,8 +132,8 @@
     
   }
   .container{
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
 
   }
   .col-sm-3 {
