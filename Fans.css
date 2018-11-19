@@ -1,0 +1,104 @@
+
+
+.firstelement{
+	margin-left: 150px;
+
+}
+
+.secondelement{
+	margin-left: 500px;
+}
+
+.setinelement{
+	margin-left: 650px;
+}
+
+
+.box {
+	margin-bottom: 150px;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+.box:hover {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+
+.rist{
+	width: 100px;
+	height:10px;
+	display: block;
+	-webkit-transition:width 2s,height2s,-webkit-transform 2s;
+	transition: width 3s,height 3s, transform 3s;
+}
+
+.rist:hover{
+	background-color: blue;
+	width: 200px;
+	height: 50px;
+	-webkit-transform:rotate 180deg;
+	transform: rotate(180deg);
+
+}
+.content{
+	height: 50px;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+.col-sm-3:hover {
+    transform: scale(1.2);
+    transform: scale(1.2);
+    transform: scale(1.2);
+    
+  }
+  .container{
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+  }
+  .col-sm-3 {
+    opacity: 1;
+  }
+  
+  .col-sm-3:hover {
+    opacity: 0.6;
+  }
+ 
+ul {
+    display: block;
+    
+    list-style: none;
+    font-size: 20px;
+    
+    
+   
+
+}
+.shrft{
+  font-size: 1vw; 
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
