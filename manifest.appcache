@@ -1,0 +1,34 @@
+CACHE MANIFEST
+
+#26.11.2018:v1
+
+
+Lab4.html
+pages/admins.html
+pages/Contacts.html
+pages/Fans.html
+pages/News.html
+
+
+
+css/Lab4.css
+css/admins.css
+css/Contacts.css
+css/Fans.css
+css/News.css
+
+
+images/1.jpg
+images/3.jpg
+
+https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
+https://code.jquery.com/jquery-3.3.1.slim.min.js
+https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js
+https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js
+
+
+FALLBACK:
+. error.html
+
+NETWORK:
+*
