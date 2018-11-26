@@ -1,165 +1,21 @@
-
-
-
-
-.Nick{
-	margin-right: 50px;
-	margin-left: 1400px;
-
-
-}
-
-
-.date{
-
-	margin-left: 150px;
-	margin-right: 300px;
-}
-
-
-
-
-.commit{
-
-	text-align: center;
-}
-
-
-
-.globall{
-
-	 width: 50px;
-    height: 40px;
-    background-color: green;
-	border-style: solid;
-	display: block;
-	-webkit-transition:translate(1000px,0px);
-	transition: transform 25s;
-	transform: translate(1800px,0px);
-
-}
-
-
-.globall:hover{ 
-    
-    
-    -webkit-transform: translate(50px,0px);
-    transform: translate(50px,0px);
-
-
-
-
-}
-@keyframes translate{
-	0%{
-		transform: translate(1800px,0px);
-	}
-	100%{ transform: translate(50px,0px);
-
-	}
-}
-
-
-.firstelement{
-	margin-left: 150px;
-
-}
-
-.secondelement{
-	margin-left: 500px;
-}
-
-.setinelement{
-	margin-left: 650px;
-}
-
-
-.box {
-	margin-bottom: 150px;
-    border-style: solid;
-    border-width: 1px;
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-color: blue;
-    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-    transition: width 2s, height 2s, background-color 2s, transform 2s;
-}
-.box:hover {
-    background-color: green;
-    width: 100px;
-    height: 100px;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-
-
-.rist{
-	width: 100px;
-	height:10px;
-	display: block;
-	-webkit-transition:width 2s,height2s,-webkit-transform 2s;
-	transition: width 3s,height 3s, transform 3s;
-}
-
-.rist:hover{
-	background-color: blue;
-	width: 200px;
-	height: 50px;
-	-webkit-transform:rotate 180deg;
-	transform: rotate(180deg);
-
-}
-.content{
-	height: 50px;
-	text-align: center;
-
-
-}
-
-
-
-
-
-
-
-
-.col-sm-3:hover {
-    transform: scale(1.2);
-    transform: scale(1.2);
-    transform: scale(1.2);
-    
-  }
-  .container{
-      padding-top: 20px;
-      padding-bottom: 20px;
-
-  }
-  .col-sm-3 {
-    opacity: 1;
-  }
-  
-  .col-sm-3:hover {
-    opacity: 0.6;
-  }
- 
-ul {
-    display: block;
-    
-    list-style: none;
-    font-size: 20px;
-    
-    
-   
-
-}
-.shrft{
-  font-size: 1vw; 
-}
 footer {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+.dropdown{
+	margin-right: 20px;
+}
+.p{
+	margin-left: 550px;
+	margin-top: 150px;
+}
+.p2{
+	margin-left: 560px;
+}
+.p3{
+	margin-left: 1300px;
+	margin-bottom: 1400px;
 }

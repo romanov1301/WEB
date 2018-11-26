@@ -1,0 +1,25 @@
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.dropdown{
+	margin-right: 20px;
+}
+
+.p-0{
+	padding: 0;
+}
+
+.carousel-control-next-icon {
+	height: 50px;
+	width: 50px;
+}
+
+.carousel-control-prev-icon{
+	height:50px;
+	width: 50px;
+
+}

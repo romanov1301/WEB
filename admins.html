@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="admins.css">
+    <link rel="stylesheet" href="../css/admin_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a href="#"class="navbar-brend"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/1000px-Boostrap_logo.svg.png"  width="30" height="30" alt="logo"></a>
+
+      <button class= "navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="fals" aria-label="Togglenavigation">
+        
+
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            
+            <a href="file:///C:/Users/romanov/Desktop/WEB/Lab4/Lab4.html" class="nav-link">Main</a>
+          </li>
+          <li class="nav-item ">
+            
+      
+
+
+            
+            <a href="file:///C:/Users/romanov/Desktop/WEB/Lab4/News.html" class="nav-link">News</a>
+          </li>
+          <li class="nav-item ">
+            
+            <a href="file:///C:/Users/romanov/Desktop/WEB/Lab4/Fans.html" class="nav-link">Fans</a>
+          </li>
+          <li class="nav-item ">
+            
+            <a href="file:///C:/Users/romanov/Desktop/WEB/Lab4/Contacts.html" class="nav-link">Contacts</a>
+          </li>
+          <li class="nav-item ">
+            
+            <a href="file:///C:/Users/romanov/Desktop/WEB/Lab4/admins.html" class="nav-link">Admin</a>
+          </li>
+        </ul>
+
+
+        <div class="dropdown">  
+        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></button>
+        <ul class="dropdown-menu ">
+          
+          <li><a href="#">Календар Матчів</a></li>
+           <li><a href="#">Наступна Гра</a></li>
+            <li><a href="#">Рейтинги</a></li>
+
+        </ul>
+
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+          
+          <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label = "Search">
+          <button class="btn btn-outline-success my-2 my-sm-0">Search</button>
+        </form>
+      </div>
+      
+
+
+    </nav>
+    </header>
+
+<div>
+
+    <div class="container">
+        <div class="main-text">
+            <h2>Додати новину</h2>
+
+            <div class="input_form">
+
+            <div class="col-md-6">
+                <img src="../images/picture.svg" width="80%">
+            </div>
+
+            <form id="addPicture">
+                <label>Виберіть зображення</label>
+                <input id="news-img" type="file" class="form-control-file">
+            </form>
+            </div>
+
+            <div class="col-md-12">
+                <form id="newsForm">
+                    <input id="caption" type="text" class="form-control" placeholder="Заголовок">
+                    <br>
+                    <textarea id="text" class="form-control" rows="15" placeholder="Новина"></textarea>
+                    <br>
+                    <input type="button" value="Надіслати" class="btn btn-primary" onclick="newsAdd()">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+       <footer class="py-5"  style=" background-color: #343a40; margin-top: 5%" id="footer">
+    <div class="container">
+      <p class="m-0 text-center" style="color: aliceblue">My Website was created 19.11.2018</p>
+    </div>
+   
+  </footer>
+    </div>
+
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</html>
