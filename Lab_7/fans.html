@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="http://wiki.mephist.ru/images/4/40/%D0%9A%D0%B8%D0%B1%D0%B5%D1%80%D1%81%D0%BF%D0%BE%D1%80%D1%82_%D0%B2_%D0%9C%D0%98%D0%A4%D0%98.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Voleyboll</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Main</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="news.html">News</a>
+        </li>
+        <li class="active">
+          <a class="nav-link" href="fans.html">Fans</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Calendar
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="calendar.html">Coming Matches</a>
+            <a class="dropdown-item" href="#">132</a>
+            <a class="dropdown-item" href="#">123</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacts.html">Contacts</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="admin.html">Admin</a>
+        </li>
+      </ul>
+    </div>
+     <img id="logo" src="http://wiki.mephist.ru/images/4/40/%D0%9A%D0%B8%D0%B1%D0%B5%D1%80%D1%81%D0%BF%D0%BE%D1%80%D1%82_%D0%B2_%D0%9C%D0%98%D0%A4%D0%98.png" alt="Logo" height="40" width="60">
+  </nav>
+
+  <content>
+  <div class="main">
+  <div class="container">
+     <h1 class="display-4">Fans reviews</h1>
+      <div class="row">
+        <div class="col-lg-10 col-md-8 mx-auto">
+          <div id="posts">
+          <div class="post-preview">
+              <h2 class="post-title">
+              Voleyboll is the best game in the world!
+              </h2>
+              <p class="post-subtitle">
+             "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+              </p>
+            <div class="row">
+                <div class="col-auto">
+                  <p class="post-meta">Posted on 19.07.2018 </p>
+                </div>
+                <div class="col-auto">
+                  <p class="author"> <a href="#" style="float: right;">by Voleyboll</a></p>
+                </div>
+              </div>
+          </div>
+          <hr>
+          <div class="post-preview">
+              <h2 class="post-title">
+                 Voleyboll: great fun
+              </h2>
+              <p class="post-subtitle">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan mi imperdiet volutpat accumsan. Sed eu velit non dolor tincidunt interdum vitae ac nunc. 
+              </p>
+            <div class="row">
+                <div class="col-auto">
+                  <p class="post-meta">Posted on 18.09.2018 </p>
+                </div>
+                <div class="col-auto">
+                  <p class="author"> <a href="#" style="float: right;">by Victor P</a></p>
+                </div>
+              </div>
+          </div>
+          <hr>
+          <div class="post-preview">
+              <h2 class="post-title">
+                 My opinion about game our team
+              </h2>
+              <p class="post-subtitle">
+              Donec tincidunt a velit nec facilisis. Proin volutpat vel dui eu mattis. Nullam a sem blandit ex placerat aliquet et nec nisl. Phasellus vel diam ultricies, sollicitudin sem eget, posuere odio. Phasellus pretium nibh vitae vestibulum lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              </p>
+              <div class="row">
+                <div class="col-auto">
+                  <p class="post-meta">Posted on 24.08.2018 </p>
+                </div>
+                <div class="col-auto">
+                  <p class="author"> <a href="#" style="float: right;">by YngGamer</a></p>
+                </div>
+              </div>
+          </div>
+          <hr>
+          </div>
+          <h2 class="display-5">Share your opinion!</h2>
+      
+        <script>
+          function validateForm() {
+              var x = document.forms["reviewForm"]["review"].value;
+              if (x == "") {
+                  alert("Review must be filled out");
+                  return false;
+              }
+              else {
+                document.getElementById('review').value = "";
+                addAppeal(x);
+                return false;
+              }
+
+
+          function addAppeal(appeal) {
+                var newPost = document.createElement('post-preview');
+                var aText = document.createElement('h2');
+                aText.className = "post-title";
+                aText.innerHTML = appeal.split("\n",1);
+                var aSubtitle = document.createElement('p');
+                aSubtitle.className = "post-subtitle";
+                aSubtitle.innerHTML = appeal;
+                var dateTime = new Date();
+                var aDate = document.createElement('p');
+                aDate.className = "post-meta";
+                aDate.innerHTML = "Posted on " + dateTime.getDate() + '.'
+                  + (dateTime.getMonth()+1) + '.'
+                  + dateTime.getFullYear() + " by admin";
+                newPost.appendChild(aText);
+                newPost.appendChild(aSubtitle);
+                newPost.appendChild(aDate);
+                document.getElementById("posts").appendChild(newPost);
+              }
+          } </script>
+
+         
+          <form name="reviewForm">
+            <div class="form-row">
+              <div class="col-11">
+                <textarea class="form-control" id="review" rows="3" placeholder="Add your review..."></textarea>
+              </div>
+                <div class="col-auto">
+                  <input id="add_appeal" class="submit_button" type="button" onclick="validateForm();" value="Submit">
+                </div>
+              </div>
+          </form>
+
+          </div>
+        </div>
+      </div>
+
+        <div class="container">
+        <footer class="page-footer font-small">
+          <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="index.html">  Voleyboll</a>
+          </div>
+        </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  </content>
+
+
+</body>
+</html>
